@@ -6,14 +6,14 @@ df = pd.read_table('SMSSpamCollection',
                    sep='\t',
                    header=None,
                    names=['label', 'sms_message'])
-df.head() # returns rows & columns
+print df.head() # returns rows & columns
 # --------------------------------------------------------------------------------------------------
 
 
 
 df['label'] = df.label.map({'ham':0, 'spam':1}) #convert the label column to numerical usin map
 print df.shape # number of rows & coumns using shape
-df.head()
+print df.head()
 # --------------------------------------------------------------------------------------------------
 
 
