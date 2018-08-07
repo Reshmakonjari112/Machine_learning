@@ -90,3 +90,17 @@ print "sum of weights: ", np.average(b, weights=weight, returned=True)
 print "standard deviation: ", np.std(b)
 print "variance: ", np.var(b)
 
+
+arr1 = np.array([[1,2], [3, 4]])
+arr2 = np.array([[11,12], [13, 14]])
+print "dot product of arrays: ", np.dot(arr1, arr2)
+print "dot product of vectors: ", np.vdot(arr1, arr2)
+print "inner product of vectors: ", np.inner(arr1, arr2)
+print "matrix product of arrays: ", np.matmul(arr1, arr2)
+print "determinant of arr1: ", np.linalg.det(arr1)
+print "determinant of arr2: ", np.linalg.det(arr2)
+
+
+
+
+
